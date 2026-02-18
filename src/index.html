@@ -1,0 +1,1226 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- header  -->
+
+    <header class="bg-transparent pt-4">
+      <div
+        class="container mx-auto flex items-center justify-between gap-5 py-3 px-4 rounded-2xl bg-white relative z-30 shadow-sm"
+      >
+        <div class="logo w-40 md:w-48">
+          <img src="/Assets/logo.svg" alt="logo" class="w-full" />
+        </div>
+
+        <nav
+          class="nav-item hidden lg:flex items-center gap-6 font-medium text-gray-700"
+        >
+          <a
+            class="bg-[linear-gradient(135deg,#006D77_0%,#00B4D8_100%)] bg-clip-text text-transparent font-bold"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="hover:text-[#00B4D8] transition-colors duration-150"
+            href="#"
+            >Verity Protocol</a
+          >
+          <a
+            class="hover:text-[#00B4D8] transition-colors duration-150"
+            href="#"
+            >Services</a
+          >
+          <a
+            class="hover:text-[#00B4D8] transition-colors duration-150"
+            href="#"
+            >Case Studies</a
+          >
+          <a
+            class="hover:text-[#00B4D8] transition-colors duration-150"
+            href="#"
+            >Knowledge Base</a
+          >
+          <a
+            class="hover:text-[#00B4D8] transition-colors duration-150"
+            href="#"
+            >Investment</a
+          >
+        </nav>
+
+        <div class="hidden lg:block">
+          <button
+            class="btn py-3 px-6 bg-[#006D77] hover:bg-[#00B4D8] transition-colors duration-300 rounded-lg text-white font-semibold"
+          >
+            Get Started
+          </button>
+        </div>
+
+        <button
+          id="menu-btn"
+          class="lg:hidden flex items-center text-[#006D77] focus:outline-none"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              id="menu-icon"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden bg-white mt-2 mx-4 rounded-xl shadow-xl border border-gray-100 overflow-hidden absolute left-0 right-0 z-20"
+      >
+        <div class="flex flex-col p-4 space-y-4 font-medium text-gray-700">
+          <a class="text-[#006D77] font-bold" href="#">Home</a>
+          <hr class="border-gray-50" />
+          <a class="hover:text-[#00B4D8]" href="#">Verity Protocol</a>
+          <a class="hover:text-[#00B4D8]" href="#">Services</a>
+          <a class="hover:text-[#00B4D8]" href="#">Case Studies</a>
+          <a class="hover:text-[#00B4D8]" href="#">Knowledge Base</a>
+          <a class="hover:text-[#00B4D8]" href="#">Investment</a>
+          <button class="w-full py-3 bg-[#006D77] text-white rounded-lg">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero section  -->
+    <section
+      class="bg-[url(../Assets/hero-bg.png)] h-195 -mt-30 flex items-center justify-between gap-5s"
+    >
+      <div class="container">
+        <div class="flex flex-col items-center px-5">
+          <div class="lg:max-w-[920px]">
+            <h1
+              class="text-white text-[36px] lg:text-[56px] font-semibold text-center"
+            >
+              TURNING MEDICAL DATA INTO INTELLIGENT INSIGHTS
+            </h1>
+            <p class="text-white text-[18px] text-center mt-2.5 font-normal">
+              We bridge the gap between complex medical catalogs and AI search
+              visibility. VerityNodes transforms your clinical data into the
+              ‘Truth Layer’ that AI engines and surgeons trust.
+            </p>
+          </div>
+
+          <button
+            class="hero-btn mt-8 bg-white text-[#338A92] py-[14px] px-[26px] rounded-[8px] shadow-lg shadow-cyan-500/50"
+          >
+            Request a Semantic Audit
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data section  -->
+    <section>
+      <div
+        class="container py-32 flex flex-col items-center justify-center gap-5"
+      >
+        <h2 class="text-[#004E64] text-center text-5xl">
+          Your Technical Data is Invisible to AI
+        </h2>
+        <p class="text-center w-175">
+          Traditional SEO cannot "read" your PDFs, IFUs, or complex manuals. If
+          AI Answer Engines can't parse your data, your products don't exist in
+          the next generation of search.
+        </p>
+
+        <div class="grid-items flex gap-6 mt-7">
+          <div
+            class="grid p-8 rounded-2xl bg-[#F8FAFB] border border-[rgba(204,14,18,0.22)] flex flex-col gap-3.5"
+          >
+            <h4 class="text-[#00475B] text-2xl font-semibold">
+              Traditional Website
+            </h4>
+            <p class="text-[#4A4C56] text-[16px]">
+              Search bots see your site as "dark" — unreadable data trapped in
+              static formats.
+            </p>
+          </div>
+
+          <div
+            class="grid p-8 rounded-2xl bg-[#F8FAFB] border border-[rgba(0,206,209,0.31)] flex flex-col gap-3.5"
+          >
+            <h4 class="text-[#00475B] text-2xl font-semibold">
+              Traditional Website
+            </h4>
+            <p class="text-[#4A4C56] text-[16px]">
+              Search bots see your site as "dark" — unreadable data trapped in
+              static formats.
+            </p>
+          </div>
+        </div>
+
+        <button
+          class="primary-btn mt-5 py-[14px] px-[26px] rounded-[8px] bg-[#006D77] text-white"
+        >
+          Analyze My Data Gaps
+        </button>
+      </div>
+    </section>
+
+    <!-- Transformation section  -->
+
+    <section
+      class="bg-[#f0f9fa] py-24 px-6 font-sans min-h-screen overflow-hidden"
+    >
+      <div class="max-w-6xl mx-auto flex flex-col items-center">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-[#004a61] text-center mb-28 max-w-2xl leading-tight"
+        >
+          The Science Of Semantic <br />
+          Transformation.
+        </h2>
+
+        <div class="relative w-full" id="timeline-wrapper">
+          <div
+            class="absolute left-1/2 transform -translate-x-1/2 w-[2px] h-full bg-slate-200"
+          >
+            <div
+              id="scroll-progress"
+              class="w-full bg-[#00acc1] transition-all duration-300 ease-out"
+              style="height: 0%"
+            ></div>
+          </div>
+
+          <div class="relative flex items-center justify-between mb-24 w-full">
+            <div class="w-[45%] flex justify-end pr-16">
+              <div
+                class="w-36 h-36 bg-white rounded-full flex items-center justify-center shadow-sm border border-slate-50"
+              >
+                <svg
+                  class="w-16 h-16 text-[#00acc1]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2zM14 10l-2 2m0 0l-2-2m2 2v-4"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="absolute left-1/2 -translate-x-1/2 w-10 h-10 bg-[#00acc1] rounded-full flex items-center justify-center text-[10px] text-white font-bold border-4 border-[#f0f9fa] z-10 shadow-sm"
+            >
+              01
+            </div>
+
+            <div class="w-[45%] pl-16">
+              <div
+                class="bg-white/60 p-8 rounded-xl border border-[#e0f2f1] shadow-sm backdrop-blur-sm"
+              >
+                <h3 class="text-xl font-bold text-[#004a61] mb-3">
+                  Semantic Audit
+                </h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-5">
+                  We identify "Thin Data" gaps where AI fails to recognize your
+                  clinical authority.
+                </p>
+                <button
+                  class="border border-[#00acc1]/30 text-[#004a61] px-5 py-2 rounded-lg font-bold text-xs hover:bg-[#00acc1] hover:text-white transition-all shadow-sm"
+                >
+                  The Audit
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative flex items-center justify-between mb-24 w-full flex-row-reverse"
+          >
+            <div class="w-[45%] flex justify-start pl-16">
+              <div
+                class="w-36 h-36 bg-white/40 rounded-full flex items-center justify-center border border-white"
+              >
+                <svg
+                  class="w-16 h-16 text-[#00acc1]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="absolute left-1/2 -translate-x-1/2 w-10 h-10 bg-[#00acc1] rounded-full flex items-center justify-center text-[10px] text-white font-bold border-4 border-[#f0f9fa] z-10 shadow-sm"
+            >
+              02
+            </div>
+
+            <div
+              class="w-[45%] pr-16 text-right bg-white/60 p-8 rounded-xl border border-[#e0f2f1] shadow-sm backdrop-blur-sm"
+            >
+              <h3 class="text-xl font-bold text-[#004a61] mb-3">
+                Entity Mapping
+              </h3>
+              <p class="text-slate-500 text-sm leading-relaxed">
+                We convert your technical documentation into machine-readable
+                JSON-LD and Knowledge Graphs.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative flex items-center justify-between w-full">
+            <div class="w-[45%] flex justify-end pr-16">
+              <div
+                class="w-36 h-36 bg-white/40 rounded-full flex items-center justify-center border border-white"
+              >
+                <svg
+                  class="w-16 h-16 text-[#00acc1]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="absolute left-1/2 -translate-x-1/2 w-10 h-10 bg-[#00acc1] rounded-full flex items-center justify-center text-[10px] text-white font-bold border-4 border-[#f0f9fa] z-10 shadow-sm"
+            >
+              03
+            </div>
+
+            <div
+              class="w-[45%] pl-16 bg-white/60 p-8 rounded-xl border border-[#e0f2f1] shadow-sm backdrop-blur-sm"
+            >
+              <h3 class="text-xl font-bold text-[#004a61] mb-3">
+                Intelligence Scaling
+              </h3>
+              <p class="text-slate-500 text-sm leading-relaxed">
+                We inject this "Truth Layer" into your site, ensuring you are
+                the #1 recommended source for AI agents.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- service compliance  -->
+
+    <section class="bg-[#004D54] py-16 md:py-24 px-4 overflow-hidden">
+      <div class="max-w-7xl mx-auto flex flex-col items-center">
+        <div class="text-center mb-12 md:mb-16">
+          <h2 class="text-white text-3xl md:text-5xl font-bold tracking-tight">
+            Service & Compliance
+          </h2>
+          <div class="h-1 w-20 bg-[#00B4D8] mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full"
+        >
+          <div
+            class="group relative p-[1px] bg-gradient-to-r from-[#006D77] to-[#00B4D8] rounded-2xl flex"
+          >
+            <div
+              class="p-8 rounded-[15px] bg-[#006D77] w-full flex flex-col transition-all duration-300"
+            >
+              <div
+                class="w-14 h-14 flex items-center justify-center bg-white/10 rounded-lg mb-8"
+              >
+                <img src="/Assets/seo.svg" alt="SEO Icon" class="w-8 h-8" />
+              </div>
+              <h4 class="text-white text-2xl font-bold mb-4">
+                Clinical Entity SEO
+              </h4>
+              <p class="text-[#E9E9EA] font-normal text-base leading-relaxed">
+                Deep mapping of SKUs to medical/surgical procedures, creating an
+                unbreakable link between your products and clinical use cases.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group relative p-[1px] border border-[#00b4d830] rounded-2xl hover:bg-gradient-to-r hover:from-[#006D77] hover:to-[#00B4D8] transition-all duration-500 flex"
+          >
+            <div
+              class="p-8 rounded-[15px] bg-[#006D77]/5 group-hover:bg-[#006D77] w-full flex flex-col transition-all duration-500"
+            >
+              <div
+                class="w-14 h-14 flex items-center justify-center bg-white/5 group-hover:bg-white/10 rounded-lg mb-8 transition-colors"
+              >
+                <img src="/Assets/ifu.svg" alt="IFU Icon" class="w-8 h-8" />
+              </div>
+              <h4 class="text-white text-2xl font-bold mb-4">
+                IFU Digitalization
+              </h4>
+              <p class="text-[#E9E9EA] font-normal text-base leading-relaxed">
+                Converting static manuals into interactive AI fuel that search
+                engines can parse, understand, and recommend.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="group relative p-[1px] border border-[#00b4d830] rounded-2xl hover:bg-gradient-to-r hover:from-[#006D77] hover:to-[#00B4D8] transition-all duration-500 flex"
+          >
+            <div
+              class="p-8 rounded-[15px] bg-[#006D77]/5 group-hover:bg-[#006D77] w-full flex flex-col transition-all duration-500"
+            >
+              <div
+                class="w-14 h-14 flex items-center justify-center bg-white/5 group-hover:bg-white/10 rounded-lg mb-8 transition-colors"
+              >
+                <img
+                  src="/Assets/Regulatory.svg"
+                  alt="Regulatory Icon"
+                  class="w-8 h-8"
+                />
+              </div>
+              <h4 class="text-white text-2xl font-bold mb-4">
+                Regulatory-Grade Precision
+              </h4>
+              <p class="text-[#E9E9EA] font-normal text-base leading-relaxed">
+                Ensuring all data structures meet ISO 13485, CE, FDA and
+                clinical accuracy standards while maintaining full compliance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="mt-12 md:mt-16 py-4 px-10 rounded-lg bg-[#006D77] text-white font-bold hover:bg-[#00B4D8] hover:scale-105 transition-all shadow-lg active:scale-95"
+        >
+          Explore Services
+        </button>
+      </div>
+    </section>
+
+    <!-- impact section  -->
+    <section class="py-16 md:py-32 px-4 bg-white font-sans">
+      <div class="max-w-6xl mx-auto flex flex-col items-center">
+        <div class="text-center max-w-2xl mb-12 md:mb-16">
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#004E64] leading-tight mb-4"
+          >
+            Proven Impact on Clinical Discoverability.
+          </h2>
+          <p class="text-[#4A4C56] text-lg font-medium">
+            The Evidence: Search-to-Solution Transformation
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
+          <div
+            class="p-6 md:p-8 rounded-2xl border border-[#CC0E1238] bg-[#F8FAFB] flex flex-col h-full shadow-sm"
+          >
+            <div class="flex items-center gap-3 mb-8">
+              <div
+                class="w-10 h-10 bg-[#CC0E1210] rounded-full flex items-center justify-center"
+              >
+                <img src="/Assets/Icon.svg" alt="Before Icon" class="w-6 h-6" />
+              </div>
+              <h4 class="text-[#00475B] text-xl md:text-2xl font-semibold">
+                Before MitoScale
+              </h4>
+            </div>
+
+            <div class="bg-white rounded-xl p-5 border border-[#ECEFF3] mb-6">
+              <p
+                class="text-[#A5A5AB] text-xs font-bold uppercase tracking-wider mb-2"
+              >
+                AI Query:
+              </p>
+              <p class="text-[#4A4C56] text-base md:text-lg italic">
+                "What's the best orthopedic implant for revision hip surgery?"
+              </p>
+            </div>
+
+            <div
+              class="bg-white rounded-xl p-8 border border-[#ECEFF3] flex flex-col items-center text-center gap-4 flex-grow mb-6"
+            >
+              <div class="bg-slate-50 p-4 rounded-full">
+                <img
+                  class="w-10 h-10 opacity-40 grayscale"
+                  src="/Assets/Icon.svg"
+                  alt="Empty Icon"
+                />
+              </div>
+              <div class="space-y-1">
+                <p class="text-[#4A4C56] font-bold text-lg">
+                  No relevant results found
+                </p>
+                <p class="text-[#777980] text-sm">
+                  Your product doesn't appear in AI recommendations
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-start gap-3 text-[#E7000B] font-medium text-sm md:text-base"
+            >
+              <span
+                class="mt-1.5 w-2 h-2 rounded-full bg-[#E7000B] shrink-0"
+              ></span>
+              <p>AI engines cannot parse unstructured technical data</p>
+            </div>
+          </div>
+
+          <div
+            class="p-6 md:p-8 rounded-2xl border border-[#00CED138] bg-white shadow-xl flex flex-col h-full relative overflow-hidden"
+          >
+            <div
+              class="absolute -top-12 -right-12 w-24 h-24 bg-[#00CED115] blur-3xl rounded-full"
+            ></div>
+
+            <div class="flex items-center gap-3 mb-8">
+              <div
+                class="w-10 h-10 bg-[#00CED115] rounded-full flex items-center justify-center"
+              >
+                <img
+                  src="/Assets/check-icon.svg"
+                  alt="Success Icon"
+                  class="w-6 h-6"
+                />
+              </div>
+              <h4 class="text-[#00475B] text-xl md:text-2xl font-semibold">
+                After MitoScale
+              </h4>
+            </div>
+
+            <div
+              class="bg-[#F0FDFA] rounded-xl p-5 border border-[#00CED120] mb-6"
+            >
+              <p class="text-[#4A4C56] text-base md:text-lg font-medium">
+                "What's the best orthopedic implant for revision hip surgery?"
+              </p>
+            </div>
+
+            <div class="space-y-4 mb-8">
+              <p class="text-[#4A4C56] text-sm md:text-base leading-relaxed">
+                <span class="font-bold text-[#004E64]"
+                  >Based on clinical technical data,</span
+                >
+                the Vertex-Surgical Modular Stem [1] is the leading
+                recommendation for complex revision hip surgeries...
+              </p>
+              <div
+                class="p-3 bg-slate-50 rounded-lg inline-block border border-slate-100"
+              >
+                <p class="text-[#777980] text-xs">
+                  <span class="font-bold">Sources:</span> [1] Vertex-Surgical
+                  Technical Manual (AI-Verified)
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-auto">
+              <img
+                src="/Assets/chat-field.png"
+                alt="AI Interface Graphic"
+                class="w-full rounded-lg shadow-inner"
+              />
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="mt-12 md:mt-16 py-4 px-8 rounded-xl bg-[#006D77] text-white font-bold text-lg hover:bg-[#004E64] transform hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-[#006D77]/20"
+        >
+          Get These Results
+        </button>
+      </div>
+    </section>
+
+    <!-- digital invisibility section  -->
+
+    <section class="py-16 md:py-32 bg-[#F3F7F8] px-4">
+      <div class="max-w-6xl mx-auto flex flex-col items-center">
+        <div class="text-center max-w-2xl mb-12 md:mb-16">
+          <h2
+            class="text-3xl md:text-5xl font-bold text-[#006D77] leading-tight mb-6"
+          >
+            The High Cost of Digital Invisibility
+          </h2>
+          <p class="text-[#4A4C56] text-lg leading-relaxed">
+            In the AI-era, being unsearchable is a balance sheet liability. Here
+            is the projected ROI of transforming your catalog.
+          </p>
+        </div>
+
+        <div class="w-full flex flex-col gap-8">
+          <h3 class="text-[#006D77] font-bold text-2xl md:text-3xl">
+            The Revenue Recovery Calculator
+          </h3>
+
+          <div
+            class="w-full rounded-2xl overflow-hidden font-sans text-white border border-[#024b53] shadow-2xl"
+          >
+            <div
+              class="hidden md:grid md:grid-cols-[1.2fr_1.5fr_1.5fr] bg-[#07a3b7] px-8 py-5 text-[15px] font-bold tracking-wider uppercase border-b border-[#024b53]"
+            >
+              <div class="flex items-center gap-2">Metric</div>
+              <div class="flex items-center gap-2 text-[#ff9e9e]">
+                The "Status Quo" Risk
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline>
+                  <polyline points="16 17 22 17 22 11"></polyline>
+                </svg>
+              </div>
+              <div class="flex items-center gap-2 text-[#b2ffda]">
+                The VerityNodes Advantage
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                  <polyline points="16 7 22 7 22 13"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <div class="bg-[#04626b]">
+              <div
+                class="flex flex-col md:grid md:grid-cols-[1.2fr_1.5fr_1.5fr] p-6 md:px-8 md:py-7 border-b border-[#024b53] gap-6 transition-colors hover:bg-[#05747e]"
+              >
+                <div
+                  class="text-lg md:text-[16px] font-bold text-white flex items-center"
+                >
+                  Market Share Capture
+                </div>
+
+                <div class="space-y-1">
+                  <span
+                    class="md:hidden block text-xs font-black text-[#ff9e9e] uppercase mb-1"
+                    >Status Quo Risk</span
+                  >
+                  <p class="text-[#e0eaea] leading-relaxed">
+                    <span
+                      class="text-[#ff5a5a] font-bold underline decoration-2 underline-offset-4"
+                      >0% Visibility</span
+                    >
+                    in AI Answer Engines (Perplexity/SearchGPT).
+                  </p>
+                </div>
+
+                <div class="space-y-1">
+                  <span
+                    class="md:hidden block text-xs font-black text-[#b2ffda] uppercase mb-1"
+                    >VerityNodes Advantage</span
+                  >
+                  <p class="text-[#e0eaea] leading-relaxed">
+                    <span class="text-[#1de474] font-bold"
+                      >#1 Featured Source</span
+                    >
+                    for procedure-specific queries.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col md:grid md:grid-cols-[1.2fr_1.5fr_1.5fr] p-6 md:px-8 md:py-7 border-b border-[#024b53] gap-6 transition-colors hover:bg-[#05747e]"
+              >
+                <div
+                  class="text-lg md:text-[16px] font-bold text-white flex items-center"
+                >
+                  Sales Cycle Speed
+                </div>
+
+                <div class="space-y-1">
+                  <span
+                    class="md:hidden block text-xs font-black text-[#ff9e9e] uppercase mb-1"
+                    >Status Quo Risk</span
+                  >
+                  <p class="text-[#e0eaea] leading-relaxed">
+                    <span class="text-[#ff5a5a] font-bold">High Friction:</span>
+                    Reps spend 30% of time answering basic technical specs.
+                  </p>
+                </div>
+
+                <div class="space-y-1">
+                  <span
+                    class="md:hidden block text-xs font-black text-[#b2ffda] uppercase mb-1"
+                    >VerityNodes Advantage</span
+                  >
+                  <p class="text-[#e0eaea] leading-relaxed">
+                    <span class="text-[#1de474] font-bold">Low Friction:</span>
+                    AI-Agents provide instant technical verification via your
+                    "Truth Layer."
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col md:grid md:grid-cols-[1.2fr_1.5fr_1.5fr] p-6 md:px-8 md:py-7 gap-6 transition-colors hover:bg-[#05747e]"
+              >
+                <div
+                  class="text-lg md:text-[16px] font-bold text-white flex items-center"
+                >
+                  Customer Acquisition Cost
+                </div>
+
+                <div class="space-y-1">
+                  <span
+                    class="md:hidden block text-xs font-black text-[#ff9e9e] uppercase mb-1"
+                    >Status Quo Risk</span
+                  >
+                  <p class="text-[#e0eaea] leading-relaxed">
+                    <span class="text-[#ff5a5a] font-bold">Rising:</span>
+                    Increasing costs of traditional PPC and keyword-based SEO.
+                  </p>
+                </div>
+
+                <div class="space-y-1">
+                  <span
+                    class="md:hidden block text-xs font-black text-[#b2ffda] uppercase mb-1"
+                    >VerityNodes Advantage</span
+                  >
+                  <p class="text-[#e0eaea] leading-relaxed">
+                    <span class="text-[#1de474] font-bold">Falling:</span>
+                    Organic authority in "Zero-Click" AI search results.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ai Diagnostic Section  -->
+
+    <section class="bg-[#004D54] py-16 md:py-32 px-4">
+      <div class="max-w-6xl mx-auto flex flex-col gap-8 md:gap-12 items-center">
+        <div class="text-center max-w-3xl">
+          <h2 class="text-white text-3xl md:text-5xl font-bold mb-4">
+            The AI Visibility Diagnostic
+          </h2>
+          <p class="text-[#E9E9EA] text-base md:text-lg">
+            A forensic map of your brand's AI footprint. Start here to identify
+            and fix misinformation.
+          </p>
+        </div>
+
+        <div
+          class="bg-[linear-gradient(135deg,rgba(0,180,216,0.2)_0%,rgba(0,109,119,0.2)_47.88%,rgba(0,180,216,0.2)_100%)] p-6 md:p-10 rounded-[16px] border border-[#00b4d828] w-full max-w-[720px] shadow-2xl"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-6 items-center justify-between text-center md:text-left"
+          >
+            <div class="flex-1">
+              <h4 class="text-[24px] font-semibold text-white">
+                AI Visibility Diagnostic
+              </h4>
+              <p class="text-[16px] text-[#E9E9EA] mt-2">
+                Stop AI hallucinations before they become brand liabilities.
+              </p>
+            </div>
+            <div class="flex items-baseline text-white shrink-0">
+              <span class="text-[32px] md:text-[40px] font-semibold"
+                >$1000</span
+              >
+              <span class="ml-2 text-xl font-medium uppercase tracking-wide"
+                >USD</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="w-full max-w-[520px] py-[13px] px-[24px] bg-[linear-gradient(135deg,rgba(0,180,216,0.3)_0%,rgba(0,109,119,0.2)_47.88%,rgba(0,180,216,0.2)_100%)] border border-[#FFFFFF1A] rounded-[8px] mt-8 mx-auto text-center"
+          >
+            <p class="text-white text-[14px]">
+              100% credited toward full implementation if started within 30 days
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full py-12 md:py-20 font-sans text-white">
+          <div class="text-center mb-12 md:mb-20">
+            <h2
+              class="text-3xl md:text-5xl font-bold tracking-tight mb-4 uppercase leading-tight"
+            >
+              Choose Your Level <br class="hidden md:block" />
+              Of Authority
+            </h2>
+            <p class="text-gray-400 text-sm tracking-[0.2em] uppercase">
+              Investment Tiers: The Executive Path
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+            <div
+              class="bg-[#003d3d]/50 p-8 rounded-2xl border border-white/10 flex flex-col transition-transform hover:scale-[1.02]"
+            >
+              <div class="mb-8">
+                <div
+                  class="w-12 h-12 bg-[#0a5c5c] rounded-full flex items-center justify-center mb-6"
+                >
+                  <svg
+                    class="w-6 h-6 text-[#4fd1d1]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">
+                  Foundational "Truth Layer"
+                </h3>
+                <p class="text-sm text-gray-300 mb-6">
+                  Best for mid-sized firms with 1-10 hero products.
+                </p>
+                <div class="text-3xl font-bold">$5,000 - $7,500</div>
+                <p class="text-xs text-gray-400 mt-1">+ Monthly Maintenance</p>
+              </div>
+
+              <div
+                class="flex-grow space-y-5 text-sm leading-relaxed border-t border-white/5 pt-6"
+              >
+                <div class="flex gap-3">
+                  <span class="text-teal-400 shrink-0">✔</span>
+                  <p>
+                    Clinical specialist review against original FDA/MDR
+                    regulatory filings.
+                  </p>
+                </div>
+                <p>
+                  <span class="text-teal-400 font-semibold italic"
+                    >Outcome:</span
+                  >
+                  Build your "Semantic Nucleus" with JSON-LD Medical Schema for
+                  your top 10 most profitable products.
+                </p>
+              </div>
+
+              <button
+                class="mt-8 w-full bg-white text-[#002b2b] font-bold py-4 rounded-lg hover:bg-gray-200 transition-all active:scale-95 shadow-lg"
+              >
+                Learn More
+              </button>
+            </div>
+
+            <div
+              class="bg-[#003d3d]/80 p-8 rounded-2xl border-2 border-teal-500 shadow-[0_0_30px_rgba(20,184,166,0.2)] relative flex flex-col lg:scale-105 z-10 transition-transform hover:scale-[1.07]"
+            >
+              <div
+                class="absolute -top-4 right-8 bg-gradient-to-r from-orange-400 to-yellow-500 text-[10px] font-black px-4 py-1.5 rounded-full uppercase text-white shadow-xl"
+              >
+                🔥 Most Popular
+              </div>
+              <div class="mb-8">
+                <div
+                  class="w-12 h-12 bg-[#0a5c5c] rounded-full flex items-center justify-center mb-6"
+                >
+                  <svg
+                    class="w-6 h-6 text-[#4fd1d1]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Market Authority</h3>
+                <p class="text-sm text-gray-300 mb-6">
+                  Best for global manufacturers looking to dominate AI search
+                  results.
+                </p>
+                <div class="text-3xl font-bold">$15,000 - $25,000</div>
+                <p class="text-xs text-gray-400 mt-1">+ Ongoing Optimization</p>
+              </div>
+
+              <div
+                class="flex-grow space-y-5 text-sm leading-relaxed border-t border-white/10 pt-6"
+              >
+                <div class="flex gap-3">
+                  <span class="text-teal-400 shrink-0">✔</span>
+                  <p>
+                    Competitor Displacement Strategy to re-route citations back
+                    to your brand.
+                  </p>
+                </div>
+                <p>
+                  <span class="text-teal-400 font-semibold italic"
+                    >Outcome:</span
+                  >
+                  Full catalog extraction (up to 50 SKUs) transformed from flat
+                  PDFs into machine-readable "Truth Nodes".
+                </p>
+              </div>
+
+              <button
+                class="mt-8 w-full bg-teal-400 text-[#002b2b] font-bold py-4 rounded-lg hover:bg-teal-300 transition-all active:scale-95 shadow-lg"
+              >
+                Learn More
+              </button>
+            </div>
+
+            <div
+              class="bg-[#003d3d]/50 p-8 rounded-2xl border border-white/10 flex flex-col transition-transform hover:scale-[1.02]"
+            >
+              <div class="mb-8">
+                <div
+                  class="w-12 h-12 bg-[#0a5c5c] rounded-full flex items-center justify-center mb-6"
+                >
+                  <svg
+                    class="w-6 h-6 text-[#4fd1d1]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">
+                  Enterprise / Global Nodes
+                </h3>
+                <p class="text-sm text-gray-300 mb-6">
+                  Ensuring the AI 'Truth Layer' works in Arabic, English, and
+                  French.
+                </p>
+                <div class="text-3xl font-bold">$50,000</div>
+                <p class="text-xs text-gray-400 mt-1">+ per annum</p>
+              </div>
+
+              <div
+                class="flex-grow space-y-5 text-sm leading-relaxed border-t border-white/5 pt-6"
+              >
+                <div class="flex gap-3">
+                  <span class="text-teal-400 shrink-0">✔</span>
+                  <p>
+                    Multilingual Semantic SEO and multi-region regulatory logic
+                    mapping.
+                  </p>
+                </div>
+                <p>
+                  <span class="text-teal-400 font-semibold italic"
+                    >Outcome:</span
+                  >
+                  A centralized API-first data hub feeding your website, AI
+                  agents, and global distributor networks.
+                </p>
+              </div>
+
+              <button
+                class="mt-8 w-full bg-white text-[#002b2b] font-bold py-4 rounded-lg hover:bg-gray-200 transition-all active:scale-95 shadow-lg"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA section  -->
+
+    <section class="py-20 px-4 md:px-6 bg-[#f0f9fa]">
+      <div class="max-w-6xl mx-auto">
+        <div
+          class="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#00b4d8] via-[#007b8a] to-[#004d54] p-8 md:p-20 text-center shadow-2xl"
+        >
+          <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern
+                  id="nodes"
+                  x="0"
+                  y="0"
+                  width="100"
+                  height="100"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <circle cx="10" cy="10" r="2" fill="white" />
+                  <circle cx="90" cy="40" r="2" fill="white" />
+                  <circle cx="50" cy="80" r="2" fill="white" />
+                  <line
+                    x1="10"
+                    y1="10"
+                    x2="90"
+                    y2="40"
+                    stroke="white"
+                    stroke-width="0.5"
+                  />
+                  <line
+                    x1="90"
+                    y1="40"
+                    x2="50"
+                    y2="80"
+                    stroke="white"
+                    stroke-width="0.5"
+                  />
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#nodes)" />
+            </svg>
+          </div>
+
+          <div class="relative z-10 max-w-3xl mx-auto">
+            <h2
+              class="text-3xl md:text-5xl font-bold text-white leading-tight mb-6"
+            >
+              Ready To Scale Your <br class="hidden md:block" />
+              Medical Intelligence?
+            </h2>
+
+            <p class="text-[#e0f2f1] text-lg md:text-xl mb-10 opacity-90">
+              Transform your clinical data into the authoritative source that
+              <br class="hidden md:block" />
+              AI engines and medical professionals trust.
+            </p>
+
+            <button
+              class="bg-white text-[#006d77] hover:bg-[#e0f2f1] transition-all duration-300 font-bold py-4 px-10 rounded-xl text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 active:scale-95 mb-10"
+            >
+              Secure Your Audit Now
+            </button>
+
+            <div
+              class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12"
+            >
+              <div
+                class="flex items-center gap-3 text-white/90 text-sm font-medium"
+              >
+                <svg
+                  class="w-5 h-5 text-teal-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  ></path>
+                </svg>
+                ISO-compliant data handling
+              </div>
+
+              <div
+                class="flex items-center gap-3 text-white/90 text-sm font-medium"
+              >
+                <svg
+                  class="w-5 h-5 text-teal-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  ></path>
+                </svg>
+                AI-verified methodology
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+
+    <footer class="bg-black text-white pt-20 pb-10 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20"
+        >
+          <div class="space-y-6">
+            <div class="flex items-center gap-3">
+              <img src="/Assets/footer-logo.png" alt="" />
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed max-w-xs">
+              Transforming medical data into intelligent insights. The semantic
+              nucleus of AI-first discoverability.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">Services</h4>
+            <ul class="space-y-4 text-gray-400 text-sm">
+              <li>
+                <a href="#" class="hover:text-white transition">Semantic SEO</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >IFU Digitalization</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Knowledge Restructuring</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >AI Visibility Monitoring</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">Resources</h4>
+            <ul class="space-y-4 text-gray-400 text-sm">
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Knowledge Base</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Case Studies</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Mito Method</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Investment Tiers</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">Addresse</h4>
+            <ul class="space-y-4 text-gray-400 text-sm">
+              <li class="flex items-start gap-3">
+                <svg
+                  class="w-5 h-5 shrink-0 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
+                Medical District, Innovation Hub
+              </li>
+              <li class="flex items-center gap-3">
+                <svg
+                  class="w-5 h-5 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                info@VerityNodes.ai
+              </li>
+              <li class="flex items-center gap-3">
+                <svg
+                  class="w-5 h-5 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  ></path>
+                </svg>
+                +1 (555) 123-4567
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-[12px] text-gray-500"
+        >
+          <p>
+            © 2026 VerityNodes.ai. ISO-compliant data handling. AI-verified
+            methodology.
+          </p>
+          <div class="flex gap-6">
+            <a href="#" class="hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/src/main.js"></script>
+  </body>
+</html>

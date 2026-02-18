@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap");
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+h1,
+h2 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+h2 {
+  font-size: 48px !important;
+}
+
+@import "tailwindcss";
+
+@layer utilities {
+  .container {
+    @apply max-w-[1320px] mx-auto;
+  }
+}
+
+.primary-btn {
+  padding: 20px 24px;
+  background-color: #006d77;
+}
